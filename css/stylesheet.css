@@ -143,7 +143,7 @@ nav .fa-github {
 .about {
   position: relative;
   width: 100%;
-  min-height: 70vh;
+  min-height: 60vh;
   background-color: #f9f9f9;
 }
 
@@ -163,23 +163,32 @@ nav .fa-github {
 }
 
 .projects{
-  text-align: center;
-  margin-top: 5%;
-  line-height: 1.6;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
 }
 
-.row {
+.projects_container{
+  position: absolute;
+  width: 100%;
+  top: 10%;
+  left: 0%;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.projects .row {
   margin-left: 5%;
 }
 
 /* Add padding BETWEEN each column (if you want) */
-.row,
-.row > .column {
+.projects .row,
+.projects .row > .projects .column {
   padding: 10px;
 }
 
 /* Create four equal columns that floats next to each other */
-.column {
+.projects .column {
   text-align: left;
   float: left;
   width: 31%;
@@ -190,4 +199,42 @@ nav .fa-github {
 .content {
   background-color: white;
   padding: 10px;
+}
+
+.contact {
+  position: relative;
+  width: 100%;
+  min-height: 20vh;
+  background-color: #f9f9f9;
+}
+
+.contact_container {
+  position: absolute;
+  width: 40%;
+  top: 20%;
+  left: 10%;
+  line-height: 1.6;
+  border: solid;
+}
+
+.contact .row{
+  width: 100%;
+  margin-left: 9%;
+}
+
+.contact .column{
+  width: 10%;
+  float: left;
+  padding: 2% 5%;
+  text-align: center;
+  line-height: 3;
+}
+.fa {
+  padding: 10%;
+  font-size: 30px;
+  width: 30px;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: var(--blue-color);
 }
