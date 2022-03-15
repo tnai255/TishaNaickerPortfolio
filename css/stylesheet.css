@@ -10,10 +10,9 @@
 html, body {
   width: 100vw;
   max-width: 100vw;
-  height: 100vh;
-  max-height: 100vw;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  background-color: #f9f9f9;
 }
 
 h1, h2, h3, h4, p {
@@ -56,8 +55,8 @@ nav ul {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 10%;
+  width: 100vw;
+  height: 5.5vw;
   overflow: hidden;
   background-color: var(--blue-color);
   z-index: 2;
@@ -65,18 +64,20 @@ nav ul {
 
 nav li {
   float: right;
+  padding: 2% 2%;
 }
 
 nav li a {
+  height: 10vw;
+  width: 8vw;
   display: block;
   color: var(--white-color);
   text-align: center;
-  padding: 30px 30px;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 1.2vw;
 }
 
 nav li a:hover:not(.active) {
@@ -85,15 +86,6 @@ nav li a:hover:not(.active) {
 
 nav .active {
   color: var(--primary-color);
-}
-
-nav .fa {
-  font-size: 20px;
-  margin-top: -3%;
-}
-
-nav .fa-github {
-  padding-right: 100px;
 }
 
 .bg-overlay {
@@ -115,7 +107,6 @@ nav .fa-github {
   background-repeat: no-repeat;
   vertical-align: middle;
   position: relative;
-
 }
 
 .home_container {
@@ -133,12 +124,12 @@ nav .fa-github {
   border-width: -1%;
   position: absolute;
   transform: translate(-50%, 40%);
-  padding: 20px;
+  padding: 2%;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   text-align: center;
-  font-size: 15px;
+  font-size: 1.2vw;
   color: var(--white-color);
 }
 
@@ -150,89 +141,89 @@ nav .fa-github {
 
 .about {
   position: relative;
-  width: 100%;
-  min-height: 60vh;
-  background-color: #f9f9f9;
+  width: 100vw;
+  min-height: 35vw;
 }
 
 .about_container {
   position: absolute;
-  width: 40%;
-  top: 20%;
-  left: 10%;
+  width: 40vw;
+  top: 6vw;
+  left: 10vw;
   line-height: 1.6;
 }
 
-.about_img {
+.about img {
   position: absolute;
-  width: 20%;
-  top: 0%;
-  left: 60%;
+  width: 30vw;
+  height: 30vw;
+  top: 0vw;
+  left: 60vw;
 }
 
 .projects {
   position: relative;
-  width: 100%;
-  min-height: 100vh;
+  width: 100vw;
+  min-height: 65vw;
+  background-color: var(--white-color);
 }
 
 .projects_container {
   position: absolute;
-  width: 100%;
-  top: 10%;
-  left: 0%;
+  width: 100vw;
+  top: 6vw;
+  left: 0vw;
   line-height: 1.6;
   text-align: center;
 }
 
 .projects .row {
-  margin-left: 5%;
+  margin-left: 9vw;
 }
 
 /* Add padding BETWEEN each column (if you want) */
 .projects .row,
 .projects .row > .projects .column {
-  padding: 10px;
+  padding: 1%;
 }
 
 /* Create four equal columns that floats next to each other */
 .projects .column {
   text-align: left;
   float: left;
-  width: 30%;
-  min-height: 75vh;
-  margin-right: 2%;
+  width: 25vw;
+  min-height: 45vw;
+  margin-right: 3vw;
   box-shadow: 6px 0 38px rgba(20, 20, 20, 0.10);
 }
 
 .content {
   background-color: white;
-  padding: 10px;
+  padding: 2%;
 }
 
 .contact {
   position: relative;
-  width: 100%;
-  min-height: 20vh;
-  background-color: #f9f9f9;
+  width: 100vw;
+  min-height: 12vw;
 }
 
 .contact_container {
   position: relative;
-  width: 40%;
-  top: 20%;
-  left: 10%;
+  width: 40vw;
+  top: 20vw;
+  left: 10vw;
   line-height: 1.6;
   border: solid;
 }
 
 .contact .row {
-  width: 100%;
-  margin-left: 9%;
+  width: 100vw;
+  margin-left: 9vw;
 }
 
 .contact .column {
-  width: 10%;
+  width: 10vw;
   float: left;
   padding: 2% 5%;
   text-align: center;
@@ -241,8 +232,9 @@ nav .fa-github {
 
 .fa {
   padding: 10%;
-  font-size: 30px;
-  width: 30px;
+  margin-top: 1vw;
+  font-size: 2vw;
+  width: 2vw;
   text-decoration: none;
   border-radius: 50%;
   background-color: var(--primary-color);
@@ -250,7 +242,7 @@ nav .fa-github {
 }
 
 .fa-envelope {
-  margin-left: 20%;
+  margin-left: 3vw;
 }
 
 .contact .fa:hover{
