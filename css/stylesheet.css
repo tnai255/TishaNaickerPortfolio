@@ -111,7 +111,7 @@ nav .active {
 
 .home_container {
   position: absolute;
-  width: 70%;
+  width: 70vw;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -142,43 +142,54 @@ nav .active {
 .about {
   position: relative;
   width: 100vw;
-  min-height: 35vw;
+  min-height: 30vw;
 }
 
-.about_container {
-  position: absolute;
-  width: 40vw;
-  top: 6vw;
-  left: 10vw;
+.about .row{
+  display: flex;
+  flex-wrap: wrap;
+  width: 70vw;
+  margin-left: 14vw;
+  margin-top: 8vw;
+}
+
+.about .column{
+  flex: 1%;
+  width: 35vw;
+  text-align: left;
+  float: left;
   line-height: 1.6;
 }
 
 .about img {
-  position: absolute;
-  width: 30vw;
-  height: 30vw;
-  top: 0vw;
-  left: 60vw;
+  max-width: 30vw;
+  max-height: 50vh;
+  width: auto;
+  height: auto;
+  margin-left: 10vw;
+  margin-top: -4vw; 
 }
 
 .projects {
   position: relative;
   width: 100vw;
-  min-height: 65vw;
+  min-height: 100vh;
   background-color: var(--white-color);
 }
 
 .projects_container {
-  position: absolute;
+  position: relative;
   width: 100vw;
-  top: 6vw;
+  top: 3vh;
   left: 0vw;
   line-height: 1.6;
   text-align: center;
 }
 
 .projects .row {
-  margin-left: 9vw;
+  margin-left: 2vw;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* Add padding BETWEEN each column (if you want) */
@@ -187,12 +198,11 @@ nav .active {
   padding: 1%;
 }
 
-/* Create four equal columns that floats next to each other */
+/* Create three equal columns that floats next to each other */
 .projects .column {
+  flex: 1%;
   text-align: left;
   float: left;
-  width: 25vw;
-  min-height: 45vw;
   margin-right: 3vw;
   box-shadow: 6px 0 38px rgba(20, 20, 20, 0.10);
 }
@@ -202,29 +212,32 @@ nav .active {
   padding: 2%;
 }
 
+.content h2{
+  font-size: 2.5vw;
+}
+
 .contact {
   position: relative;
   width: 100vw;
-  min-height: 12vw;
 }
 
 .contact_container {
   position: relative;
   width: 40vw;
-  top: 20vw;
   left: 10vw;
   line-height: 1.6;
-  border: solid;
 }
 
 .contact .row {
   width: 100vw;
-  margin-left: 9vw;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .contact .column {
   width: 10vw;
   float: left;
+  flex: 5%;
   padding: 2% 5%;
   text-align: center;
   line-height: 3;
@@ -241,10 +254,6 @@ nav .active {
   color: var(--blue-color);
 }
 
-.fa-envelope {
-  margin-left: 3vw;
-}
-
 .contact .fa:hover{
   background-color: var(--blue-color);
   color: var(--primary-color);
@@ -257,4 +266,90 @@ nav .active {
 
 .contact p:hover {
   color: var(--primary-color);
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+
+  h1{
+    font-size: 10vw;
+  }
+
+  h2{
+    font-size: 4vw;
+  }
+
+  h3{
+    font-size: 4vw;
+  }
+
+  h4{
+    font-size: 2.5vw;
+  }
+
+  p {
+    font-size: 2vw;
+  }
+
+  .home_container{
+    width: 90vw;
+  }
+
+  .home_btn{
+    font-size: 2vw;
+    border-width: 0.5vw;
+  }
+
+  .about .column{
+    flex: 100%;
+  }
+
+  .about img{
+    margin-left: 22vw;
+  }
+
+  .projects{
+    height: auto;
+    padding-bottom: 10vh;
+  }
+  .projects .column,
+  .projects .column > .projects .row {
+  padding: 1%;
+  }
+
+  .projects .row{
+    width: 60vw;
+    margin-left: 20vw;
+  }
+
+  .projects .column{
+    flex: 50%;
+  }
+
+  .contact .column {
+    flex: 25%;
+  }
+
+  .content h2{
+    font-size: 3.5vw;
+  }
+
+  .contact .fa {
+    padding: 5%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+  .about .row{
+    flex-direction: 50%;
+  }
+  
+  .projects .row{
+    flex-direction: column;
+  }
+  .contact .row {
+    flex-direction: 25%;
+  }
 }
