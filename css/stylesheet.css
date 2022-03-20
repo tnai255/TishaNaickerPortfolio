@@ -91,7 +91,7 @@ nav a:hover:not(.active) {
   color: var(--primary-color);
 }
 
-nav .active {
+nav a.active {
   color: var(--primary-color);
 }
 
@@ -373,7 +373,7 @@ nav .icon {
 
   nav {
     padding: 0;
-    min-height: 8vw;
+    min-height: 10vw;
   }
 
   nav a {
@@ -383,6 +383,7 @@ nav .icon {
   nav a.logo{
     display: block;
     font-size: 6vw;
+    margin-top: 0vw;
   }
 
   nav a.icon {
@@ -391,7 +392,7 @@ nav .icon {
   }
 
   .fa-bars {
-    margin-top: -1vw;
+    margin-top: 0vw;
     background-color: var(--blue-color);
     color: var(--white-color);
     font-size: 4vw;
