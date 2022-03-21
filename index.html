@@ -5,17 +5,22 @@
 
     <title>Tisha Naicker's Portfolio</title>
 
+    <!-- Basic responsiveness -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Social Media icons stylesheet-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Main Style sheet-->
     <link rel="stylesheet" href="css/stylesheet.css">
 
 </head>
 
 <body>
 
+    <!-- Navigation bar-->
     <nav class="nav" id="nav">
+        <!-- Logo not in div so it doesn't have active animation-->
         <a class="logo" href="#home">T.N</a>
         <div class="tab">
             <a class="active" href="#home">Home</a>
@@ -23,12 +28,15 @@
             <a href="#projects">Projects</a>
             <a href="#contact">Contact Me</a>
         </div>
+        <!-- Hamburger Menu for mobile devices, on click opens the js -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
     </nav>
 
+    <!-- Home Page-->
     <section class="home" id="home">
+        <!-- Colour Overlay Mask -->
         <div class="bg-overlay"></div>
         <div class="home_container">
             <h3>Kia Ora, I'm</h3>
@@ -38,6 +46,7 @@
         </div>
     </section>
 
+    <!-- About Me Page-->
     <section class="about" id="about">
         <div class="about_container">
             <div class="row">
@@ -62,6 +71,7 @@
         </div>
     </section>
 
+    <!-- Projects Page -->
     <section class="projects" id="projects">
         <div class="projects_container">
             <h2>My Projects</h2>
@@ -100,9 +110,11 @@
         </div>
     </section>
 
+    <!-- Contact Me Footer -->
     <section class="contact" id="contact">
         <div class="row">
             <div class="column">
+                <!-- Links for both social media icon and text -->
                 <a href="mailto:naicker.tisha@gmail.com" class="fa fa-envelope"></a>
                 <a href="mailto:naicker.tisha@gmail.com">
                     <p>naicker.tisha@gmail.com</p>
@@ -131,12 +143,16 @@
 
 </body>
 
+<!-- Allows smooth scrolling on Safari -->
 <script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
 <script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>
+
+<!-- Syntax for active function -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
 
-    // Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon
+    // Added responsiveness to hamburger menu so when clicked it opens the nav links
+    // Reference: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
     function myFunction() {
         var x = document.getElementById("nav");
         if (x.className === "nav") {
@@ -146,6 +162,8 @@
         }
     }
 
+    // If section is reached the navigation link becomes active i.e. changes colour
+    // Reference: https://codepen.io/rishabhp/pen/aNXVbQ
     var sections = $('section')
         , nav = $('nav .tab')
         , nav_height = nav.outerHeight();
@@ -166,10 +184,6 @@
             }
         });
     });
-
-    // https://codepen.io/rishabhp/pen/aNXVbQ
-
-    // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section1 
 </script>
 
 <script>
