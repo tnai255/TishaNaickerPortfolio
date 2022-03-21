@@ -18,10 +18,10 @@
     <nav class="nav" id="nav">
         <a class="logo" href="#home">T.N</a>
         <div class="tab">
-            <a class="active" id="h" href="#home">Home</a>
-            <a id="a" href="#about">About Me</a>
-            <a id="p" href="#projects">Projects</a>
-            <a id="c" href="#contact">Contact Me</a>
+            <a class="active" href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact Me</a>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
@@ -131,6 +131,8 @@
 
 </body>
 
+<script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
+<script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
 
@@ -143,31 +145,6 @@
             x.className = "nav";
         }
     }
-
-    $(document).ready(function () {
-        // Add smooth scrolling to all links
-        $("a").on('click', function (event) {
-
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-                // Prevent default anchor click behavior
-                event.preventDefault();
-
-                // Store hash
-                var hash = this.hash;
-
-                // Using jQuery's animate() method to add smooth page scroll
-                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function () {
-
-                    // Add hash (#) to URL when done scrolling (default click behavior)
-                    window.location.hash = hash;
-                });
-            } // End if
-        });
-    });
 
     var sections = $('section')
         , nav = $('nav .tab')
@@ -190,16 +167,9 @@
         });
     });
 
-    nav.find('a').on('click', function () {
-        var $el = $(this)
-            , id = $el.attr('href');
+    // https://codepen.io/rishabhp/pen/aNXVbQ
 
-        $('html, body').animate({
-            scrollTop: $(id).offset().top - nav_height
-        }, 500);
-
-        return false;
-    });
+    // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section1 
 </script>
 
 <script>
