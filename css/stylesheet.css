@@ -125,7 +125,7 @@ nav .icon {
 .home {
   min-height: 100vh;
   min-width: 100vw;
-  background-image: url('../images/bg.jpg');
+  background-image: url('../media/bg.jpg');
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;

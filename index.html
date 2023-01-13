@@ -1,228 +1,257 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+    <head>
 
-    <title>Tisha Naicker's Portfolio</title>
+        <title>Tisha Naicker's Portfolio</title>
 
-    <!-- Basic responsiveness -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Basic responsiveness -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Social Media icons stylesheet-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Main Style sheet-->
-    <link rel="stylesheet" href="css/stylesheet.css">
+        <!-- Social Media icons stylesheet-->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Main Style sheet-->
+        <link rel="stylesheet" href="css/stylesheet.css">
 
-</head>
+    </head>
 
-<body>
+    <body>
 
-    <!-- Navigation bar-->
-    <nav class="nav" id="nav">
-        <!-- Logo not in div so it doesn't have active animation-->
-        <a class="logo" href="#home">T.N</a>
-        <div class="tab">
-            <a class="active" href="#home">Home</a>
-            <a href="#about">About Me</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact Me</a>
-        </div>
-        <!-- Hamburger Menu for mobile devices, on click opens the js -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </nav>
+        <!-- Navigation bar-->
+        <nav class="nav" id="nav">
+            <!-- Logo not in div so it doesn't have active animation-->
+            <a class="logo" href="#home">T.N</a>
+            <div class="tab">
+                <a class="active" href="#home">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact Me</a>
+            </div>
+            <!-- Hamburger Menu for mobile devices, on click opens the js -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
 
-    <!-- Home Page-->
-    <section class="home" id="home">
-        <!-- Colour Overlay Mask -->
-        <div class="bg-overlay"></div>
-        <div class="home_container">
-            <h3>Kia Ora, I'm</h3>
-            <h1>Tisha Naicker.</h1>
-            <h2>2nd Year Software Engineering Student.</h2>
-            <a href="TishaNaicker_CV.pdf" class="home_btn">Resume</a>
-        </div>
-    </section>
+        <!-- Home Page-->
+        <section class="home" id="home">
+            <!-- Colour Overlay Mask -->
+            <div class="bg-overlay"></div>
+            <div class="home_container">
+                <h3>Kia Ora, I'm</h3>
+                <h1>Tisha Naicker.</h1>
+                <h2>2nd Year Software Engineering Student.</h2>
+                <a href="TishaNaicker_CV.pdf" class="home_btn">Resume</a>
+            </div>
+        </section>
 
-    <!-- About Me Page-->
-    <section class="about" id="about">
-        <div class="about_container">
+        <!-- About Me Page-->
+        <section class="about" id="about">
+            <div class="about_container">
+                <div class="row">
+                    <div class="column">
+                        <h2>A little bit about me!</h2>
+                        <br>
+                        <p>I am in my third year of a Bachelor of Engineering (Honours) degree specialising in Software
+                            at
+                            the
+                            University of Auckland. My love and incredible passion for coding has led me to look for
+                            internship
+                            opportunities that utilise knowledge specific to my software engineering career. Some fun
+                            facts
+                            about
+                            me, I enjoy being creative through drawing and painting, and I would go to an escape room
+                            regularly
+                            if I
+                            could because I love problem-solving to escape them! </p>
+                    </div>
+                    <div class="column">
+                        <img src="media/hi.PNG" alt="Memoji">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Page -->
+        <section class="projects" id="projects">
+            <div class="projects_container">
+                <h2>My Projects</h2>
+                <p>I'm proficient in Java, C, HTML, CSS, MATLAB!</p>
+                <div class="row">
+
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <div class="content">
+                            <video width="400" height="300" controls>
+                                <source src="media/Demo.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <h2>Quick Draw Game</h2>
+                            <h4>Created in - Java</h4>
+                            <p> Through a group project, we created a game with a GUI using JavaFX.
+                                The game was similar to the Quick, Draw Google game, but with our own spin to it,
+                                hence it used Machine Learning to do predictions. This game was fully fledged with
+                                animations, creative design, game modes, badges, scores, and user profiles.
+                                We used .json files to store data. We iteratively created this project based on client
+                                requirements and design meetings.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <img src="media/blackjack.png" alt="BrickBreaker" style="width:100%">
+                            <h2>Black Jack Game</h2>
+                            <h4>Created in - Java</h4>
+                            <p>Using OOP, I created the online version of the game Black Jack. I used Factory and
+                                Strategy Design Patterns to create 3 different mode for the bots and 2 different modes
+                                for the dealer to play with.
+                                I also incorporated elements of Artifical Intelligence as the dealer would change
+                                strategies in run time depending
+                                on which player is scoring the highest.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <img src="media/ds.png" alt="BrickBreaker" style="width:100%">
+                            <h2>Data Structures</h2>
+                            <h4>Created in - Java</h4>
+                            <p>I created functionalities of Linked List, Stacks and Queues. Then using these I create
+                                Graph functionalitie
+                                such as checking if the reflexivity, symmetry, and transitivity as well as Breadth First
+                                Search and Depth First Search.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <div class="content">
+                            <img src="media/burgershop.png" alt="BrickBreaker" style="width:100%">
+                            <h2>Burger Restaurant</h2>
+                            <h4>Created in - Java</h4>
+                            <p>Using OOP, I created the functionality of ordering online for a Burger restaurant. The
+                                user can place an order,
+                                the system can display their cart, total price, give discounts, suggest to change to
+                                combo, and calculate total
+                                time needed for order to be ready based on items in cart.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <img src="media/BrickBreaker.png" alt="BrickBreaker" style="width:100%">
+                            <h2>Brick Breaker Game</h2>
+                            <h4>Created in - Java</h4>
+                            <p>Being very excited to learn about OOP, I created the classic Brick Breaker
+                                Game. I encountered new concepts, tools, and bugs which extensively developed my
+                                problem-solving and programming skills. </p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <img src="media/VisualCryptography2.gif" alt="VisualCryptography" style="width:100%">
+                            <h2>Visual Cryptography</h2>
+                            <h4>Created in - MATLAB</h4>
+                            <p>MATLAB project about Visual Cryptography where I encoded and decoded hidden
+                                messages in an image. In this project, I created 8 functions and 2 helper functions.</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <img src="media/ContainerYard.jpg" alt="ContainerYard" style="width:100%">
+                            <h2>Container Yard Game</h2>
+                            <h4>Created in - C</h4>
+                            <p>C project where I created the functionality of the Container Yard game which
+                                is where a container is stuck between other containers and the objective is to take the
+                                container out of the 'yard'.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Me Footer -->
+        <section class="contact" id="contact">
             <div class="row">
                 <div class="column">
-                    <h2>A little bit about me!</h2>
-                    <br>
-                    <p>I am in my second year of a Bachelor of Engineering (Honours) degree specialising in Software at
-                        the
-                        University of Auckland. My love and incredible passion for coding has led me to look for
-                        internship
-                        opportunities that utilise knowledge specific to my software engineering career. Some fun facts
-                        about
-                        me, I enjoy being creative through drawing and painting, and I would go to an escape room
-                        regularly
-                        if I
-                        could because I love problem-solving to escape them! </p>
+                    <!-- Links for both social media icon and text -->
+                    <a href="mailto:naicker.tisha@gmail.com" class="fa fa-envelope"></a>
+                    <a href="mailto:naicker.tisha@gmail.com">
+                        <p>naicker.tisha@gmail.com</p>
+                    </a>
                 </div>
                 <div class="column">
-                    <img src="images/hi.PNG" alt="Memoji">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Page -->
-    <section class="projects" id="projects">
-        <div class="projects_container">
-            <h2>My Projects</h2>
-            <p>I'm proficient in Java, C, HTML, CSS, MATLAB!</p>
-            <div class="row">
-                <div class="column">
-                    <div class="content">
-                        <img src="images/blackjack.png" alt="BrickBreaker" style="width:100%">
-                        <h2>Black Jack Game</h2>
-                        <h4>Created in - Java</h4>
-                        <p>Using OOP, I created the online version of the game Black Jack. I used Factory and 
-                            Strategy Design Patterns to create 3 different mode for the bots and 2 different modes for the dealer to play with.
-                            I also incorporated elements of Artifical Intelligence as the dealer would change strategies in run time depending 
-                            on which player is scoring the highest. 
-                        </p>
-                    </div>
+                    <a href="tel:+64226980492" class="fa fa-phone"></a>
+                    <a href="tel:+64226980492">
+                        <p>+64 22 698 0492</p>
+                    </a>
                 </div>
                 <div class="column">
-                    <div class="content">
-                        <img src="images/burgershop.png" alt="BrickBreaker" style="width:100%">
-                        <h2>Burger Restaurant</h2>
-                        <h4>Created in - Java</h4>
-                        <p>Using OOP, I created the functionality of ordering online for a Burger restaurant. The user can place an order, 
-                            the system can display their cart, total price, give discounts, suggest to change to combo, and calculate total 
-                            time needed for order to be ready based on items in cart. 
-                        </p>
-                    </div>
+                    <a href="https://linkedin.com/in/tishanaicker" class="fa fa-linkedin"></a>
+                    <a href="https://linkedin.com/in/tishanaicker">
+                        <p>Tisha Naicker</p>
+                    </a>
                 </div>
                 <div class="column">
-                    <div class="content">
-                        <img src="images/ds.png" alt="BrickBreaker" style="width:100%">
-                        <h2>Data Structures</h2>
-                        <h4>Created in - Java</h4>
-                        <p>I created functionalities of Linked List, Stacks and Queues. Then using these I create Graph functionalitie
-                            such as checking if the reflexivity, symmetry, and transitivity as well as Breadth First Search and Depth First Search. 
-                        </p>
-                    </div>
+                    <a href="https://github.com/tnai255" class="fa fa-github"></a>
+                    <a href="https://github.com/tnai255">
+                        <p>tnai255</p>
+                    </a>
                 </div>
             </div>
-            <div class="row">
-                <div class="column">
-                    <div class="content">
-                        <img src="images/BrickBreaker.png" alt="BrickBreaker" style="width:100%">
-                        <h2>Brick Breaker Game</h2>
-                        <h4>Created in - Java</h4>
-                        <p>Being very excited to learn about OOP, I created the classic Brick Breaker
-                            Game. I encountered new concepts, tools, and bugs which extensively developed my
-                            problem-solving and programming skills. </p>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="content">
-                        <img src="images/VisualCryptography2.gif" alt="VisualCryptography" style="width:100%">
-                        <h2>Visual Cryptography</h2>
-                        <h4>Created in - MATLAB</h4>
-                        <p>MATLAB project about Visual Cryptography where I encoded and decoded hidden
-                            messages in an image. In this project, I created 8 functions and 2 helper functions.</p>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="content">
-                        <img src="images/ContainerYard.jpg" alt="ContainerYard" style="width:100%">
-                        <h2>Container Yard Game</h2>
-                        <h4>Created in - C</h4>
-                        <p>C project where I created the functionality of the Container Yard game which
-                            is where a container is stuck between other containers and the objective is to take the
-                            container out of the 'yard'.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Me Footer -->
-    <section class="contact" id="contact">
-        <div class="row">
-            <div class="column">
-                <!-- Links for both social media icon and text -->
-                <a href="mailto:naicker.tisha@gmail.com" class="fa fa-envelope"></a>
-                <a href="mailto:naicker.tisha@gmail.com">
-                    <p>naicker.tisha@gmail.com</p>
-                </a>
-            </div>
-            <div class="column">
-                <a href="tel:+64226980492" class="fa fa-phone"></a>
-                <a href="tel:+64226980492">
-                    <p>+64 22 698 0492</p>
-                </a>
-            </div>
-            <div class="column">
-                <a href="https://linkedin.com/in/tishanaicker" class="fa fa-linkedin"></a>
-                <a href="https://linkedin.com/in/tishanaicker">
-                    <p>Tisha Naicker</p>
-                </a>
-            </div>
-            <div class="column">
-                <a href="https://github.com/tnai255" class="fa fa-github"></a>
-                <a href="https://github.com/tnai255">
-                    <p>tnai255</p>
-                </a>
-            </div>
-        </div>
-    </section>
+    </body>
 
-</body>
+    <!-- Allows smooth scrolling on Safari -->
+    <script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
+    <script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>
 
-<!-- Allows smooth scrolling on Safari -->
-<script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
-<script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>
+    <!-- Syntax for active function -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
 
-<!-- Syntax for active function -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-
-    // Added responsiveness to hamburger menu so when clicked it opens the nav links
-    // Reference: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
-    function myFunction() {
-        var x = document.getElementById("nav");
-        if (x.className === "nav") {
-            x.className += " responsive";
-        } else {
-            x.className = "nav";
-        }
-    }
-
-    // If section is reached the navigation link becomes active i.e. changes colour
-    // Reference: https://codepen.io/rishabhp/pen/aNXVbQ
-    var sections = $('section')
-        , nav = $('nav .tab')
-        , nav_height = nav.outerHeight();
-
-    $(window).on('scroll', function () {
-        var cur_pos = $(this).scrollTop();
-
-        sections.each(function () {
-            var top = $(this).offset().top - nav_height,
-                bottom = top + $(this).outerHeight();
-
-            if (cur_pos >= top && cur_pos <= bottom) {
-                nav.find('a').removeClass('active');
-                sections.removeClass('active');
-
-                $(this).addClass('active');
-                nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
+        // Added responsiveness to hamburger menu so when clicked it opens the nav links
+        // Reference: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+        function myFunction() {
+            var x = document.getElementById("nav");
+            if (x.className === "nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav";
             }
-        });
-    });
-</script>
+        }
 
-<script>
-    
-</script>
+        // If section is reached the navigation link becomes active i.e. changes colour
+        // Reference: https://codepen.io/rishabhp/pen/aNXVbQ
+        var sections = $('section')
+            , nav = $('nav .tab')
+            , nav_height = nav.outerHeight();
+
+        $(window).on('scroll', function () {
+            var cur_pos = $(this).scrollTop();
+
+            sections.each(function () {
+                var top = $(this).offset().top - nav_height,
+                    bottom = top + $(this).outerHeight();
+
+                if (cur_pos >= top && cur_pos <= bottom) {
+                    nav.find('a').removeClass('active');
+                    sections.removeClass('active');
+
+                    $(this).addClass('active');
+                    nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
+                }
+            });
+        });
+    </script>
+
+    <script>
+
+    </script>
 
 </html>
